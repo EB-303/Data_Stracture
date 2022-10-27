@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Stracture</title>
+</head>
+
+<body>
+    <header>
+        <h2>Data Stracture</h2>
+    </header>
+    <section>
+        <article>
+            <h3>course assingments:</h3>
+            1. final exam - most of the final grade.
+            2. 8 assingments if the sum of the assingments is 650 you get 5 points extra in the course 650/8=81.25
+        </article>
+
+        <article>
+            <h2>Lacture One - Ran Ziv</h2>
+            <pre>
+                1. introduction: the importance of algorithm to for time complaxity,
+                demenstrasions of plaing and analizing algorithms in sorting and merging using psaudo code,
+                groth rate of functions, big O notation, theta and omega.
+                regration equations: integrations and <mark>father methods?</mark>
+
+                2. basic data structures: arrays, linked lists, stacks, queues, trees, graphs.
+
+
+
+                note: the labs are in java.
+
+
+                TEACHER NOTE: 1. never miss a chance to program.
+                    
+
+            </pre>
+
+            <pre>
+                1. we're looking to sum the numbers in an array:
+                    <code >
+                    // linear search:
+                    int sum = 0;
+                    for (int i = 0; i < arr.length; i++) {
+                        sum += arr[i];
+                    } // O(n)
+                    </code>
+                    
+            </pre>
+
+            <p>side notes: this is the first of a sires of courses</p>
+
+            <p>the course is in hebrew</p>
+
+
+
+        </article>
+
+
+
+        <article>
+            <h2>practice one - Elad Roda</h2>
+            <pre>
+                the main idea of this course is to becoume an efficient programmer
+                whats is data stracture?
+                data stracture is a way to organize data in a computer so that it can be used efficiently
+                what is an algorithm?
+                an algorithm is a set of steps to accomplish a task
+
+                what is the data stracture that we will learn in this course?
+                we will learn about:
+                    arrays
+                    linked lists 
+                    stacks 
+                    queues
+                    trees
+                    graphs
+                    hash tables
+                    heaps
+
+
+                what will be the best data structure to find the maximum value in an array?
+                the best data structure to find the maximum value in an array is the binary search tree
+
+                what is an algorithm?
+                a well defined set of steps to accomplish a task
+
+                example for algorithm:
+                    oclidean algorithm - to find the greatest common divisor of two numbers
+
+                in this course we will get an problem and a number of steps to solve it and we will need to find the currect data strucure to solve it to achive the best time complexity
+
+
+
+
+                efficiently on an algorithm - time complexity / space complexity    
+
+                we are masuring the time complexity of an algorithm by the number of steps it takes to complete the task
+
+                linear time complexity - O(n)
+
+
+            </pre>
+
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/x6t1lKzjGhY"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </article>
+
+
+        <article>
+            <pre>
+                    סימונים אסימפטוטיים - חסמים 
+
+                    let f(n) and g(n) 
+                    monotonic and inclining functions
+                    f(n) = O(g(n)) iff there is a positive constant c > 0 and a positive integer n0 such that f(n) <= c*g(n) for all n >= n0
+
+                    proff: 
+
+                    example:
+                        n/2 = O(n)
+                    selotion:
+                        n/2 <= 1*n
+                        for each n >= 1
+                        choose: c = 1 and n0 = 1
+                        n = 0(n/2)
+                        n <= 3*n/2
+                        for each n >= 1
+                        choose: n0 = 1, c = 3
+
+
+
+                     
+                        
+                    <b>insertion sort:</b>
+                        for i = 1 to n-1
+                            for j = i downto 1
+                                if a[j] < a[j-1]
+                                    swap a[j] and a[j-1]
+                                else
+                                    break
+                    
+                    
+                    number of steps: n(n-1)/2 = n^2/2 - n/2                                    
+                    time complexity: O(n^2) - quadratic time complexity
+
+
+            </pre>
+        </article>
+    </section>
+</body>
+
+</html>
