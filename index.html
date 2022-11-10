@@ -271,6 +271,49 @@ proof:
 
             </pre>
         </article>
+
+        <article>
+            <h3>Class Excersize - Elad Roda</h3>
+            <p class="code-space">
+                int i,j,x;<br>
+                for(i=1;i&lt;=n;i++)<br>
+                &emsp;if(i%2==1)<br>
+                &emsp;&emsp;for(j=i;j&lt;=n;j++)<br>
+                &emsp;&emsp;&emsp;x=x+1;<br>
+            </p>
+            <p>
+                T(n) = n + n-2 + n-4 + ... + 2 = n(n+1)/2 = O(n^2)
+            </p>
+            <p class="code-space">
+                int func2(int n){<br>
+                &emsp;int x, count;<br>
+                &emsp;count = 0;<br>
+                &emsp;x = 1;<br>
+                &emsp;while(x&lt;n){<br>
+                &emsp;&emsp;x = x*2;<br>
+                &emsp;&emsp;count = count + 1;<br>
+                &emsp;}<br>
+                &emsp;return count;<br>
+                }
+           </p>
+            <p>
+                we can divide n by 2 until we get to 1, so we can say that n = 2^k, and k is the number of times we divided by 2.<br>
+                so we can say that T(n) = k = O(log(n))
+            </p>
+
+
+            <p class="code-space">
+                int func3(int n){<br>
+                &emsp;int i, x;<br>
+                &emsp;for(i = n; i >= 1; i--){<br>
+                &emsp;x = 1;<br>
+                &emsp;while(x&lt;i){<br>
+                &emsp;&emsp;x *= 2;<br>
+                &emsp;}<br>
+                }
+
+            </p>
+        </article>
     </section>
 </body>
 
